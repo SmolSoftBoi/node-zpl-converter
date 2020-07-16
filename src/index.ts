@@ -1,5 +1,6 @@
-import Jimp from 'jimp';
 import { readFileSync } from 'fs';
+
+import Jimp from 'jimp';
 
 /**
  * ZPL converter.
