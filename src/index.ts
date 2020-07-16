@@ -120,7 +120,7 @@ export class ZplConverter {
      * Set blackness limit percentage.
      * @param percentage Percentage.
      */
-    setBlacknessLimitPercentage(percentage: number) {
+    setBlacknessLimitPercentage(percentage: number): void {
         this.blackLimit = percentage * 768 / 100;
     }
 
@@ -210,7 +210,11 @@ export class ZplConverter {
      * @param code Code.
      */
     private encodeHexAscii(code: string): string {
-        const maxLinea = this.widthBytes! * 2;
+        if (!this.widthBytes) {
+            throw new Error('Width bytes not set.');
+        }
+
+        const maxLinea = this.widthBytes * 2;
 
         let codeBuffer = new Buffer('');
         let lineaBuffer = new Buffer('');
