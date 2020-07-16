@@ -1,6 +1,6 @@
 {
     "name": "node-zpl-converter",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Convert an image to a ZPL code file.",
     "repository": {
         "type": "git",
