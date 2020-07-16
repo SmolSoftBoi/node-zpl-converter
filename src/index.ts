@@ -5,7 +5,7 @@ import Jimp from 'jimp';
 /**
  * ZPL converter.
  */
-export class ZplConverter {
+export default class ZplConverter {
 
     /**
      * Map codes.
@@ -245,16 +245,20 @@ export class ZplConverter {
                     const multi20 = (counter / 20) * 20;
                     const resto20 = counter % 20;
 
-                    lineaBuffer = Buffer.concat([
-                        lineaBuffer,
-                        new Buffer(ZplConverter.mapCodes[multi20])
-                    ]);
-
-                    if (resto20 !== 0) {
+                    if (ZplConverter.mapCodes[multi20]) {
                         lineaBuffer = Buffer.concat([
                             lineaBuffer,
-                            new Buffer(ZplConverter.mapCodes[resto20])
+                            new Buffer(ZplConverter.mapCodes[multi20])
                         ]);
+                    }
+
+                    if (resto20 !== 0) {
+                        if (ZplConverter.mapCodes[resto20]) {
+                            lineaBuffer = Buffer.concat([
+                                lineaBuffer,
+                                new Buffer(ZplConverter.mapCodes[resto20])
+                            ]);
+                        }
                     }
 
                     lineaBuffer = Buffer.concat([
@@ -262,9 +266,15 @@ export class ZplConverter {
                         new Buffer(aux)
                     ]);
                 } else {
+                    if (ZplConverter.mapCodes[counter]) {
+                        lineaBuffer = Buffer.concat([
+                            lineaBuffer,
+                            new Buffer(ZplConverter.mapCodes[counter])
+                        ]);
+                    }
+
                     lineaBuffer = Buffer.concat([
                         lineaBuffer,
-                        new Buffer(ZplConverter.mapCodes[counter]),
                         new Buffer(aux)
                     ]);
                 }
@@ -296,16 +306,20 @@ export class ZplConverter {
                     const multi20 = (counter / 20) * 20;
                     const resto20 = counter % 20;
 
-                    lineaBuffer = Buffer.concat([
-                        lineaBuffer,
-                        new Buffer(ZplConverter.mapCodes[multi20])
-                    ]);
-
-                    if (resto20 !== 0) {
+                    if (ZplConverter.mapCodes[multi20]) {
                         lineaBuffer = Buffer.concat([
                             lineaBuffer,
-                            new Buffer(ZplConverter.mapCodes[resto20])
+                            new Buffer(ZplConverter.mapCodes[multi20])
                         ]);
+                    }
+
+                    if (resto20 !== 0) {
+                        if (ZplConverter.mapCodes[resto20]) {
+                            lineaBuffer = Buffer.concat([
+                                lineaBuffer,
+                                new Buffer(ZplConverter.mapCodes[resto20])
+                            ]);
+                        }
                     }
 
                     lineaBuffer = Buffer.concat([
@@ -313,9 +327,15 @@ export class ZplConverter {
                         new Buffer(aux)
                     ]);
                 } else {
+                    if (ZplConverter.mapCodes[counter]) {
+                        lineaBuffer = Buffer.concat([
+                            lineaBuffer,
+                            new Buffer(ZplConverter.mapCodes[counter])
+                        ]);
+                    }
+
                     lineaBuffer = Buffer.concat([
                         lineaBuffer,
-                        new Buffer(ZplConverter.mapCodes[counter]),
                         new Buffer(aux)
                     ]);
                 }
