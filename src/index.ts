@@ -1,4 +1,5 @@
 import Jimp from 'jimp';
+import { readFileSync } from 'fs';
 
 /**
  * ZPL converter.
@@ -72,10 +73,19 @@ export class ZplConverter {
 
     /**
      * ZPL converter.
-     * @param originalImage Original image.
-     * @param args Arguments.
+     * @param originalImageFile Original image file.
      */
-    static async main(originalImage: Buffer): Promise<string> {
+    static async main(originalImageFile: Buffer | string): Promise<string> {
+        let originalImage: Buffer;
+
+        switch (typeof originalImageFile) {
+            case 'string':
+                originalImage = readFileSync(originalImageFile);
+                break;
+            default:
+                originalImage = originalImageFile;
+        }
+
         const zpl = new ZplConverter();
         zpl.setCompressHex(true);
         zpl.setBlacknessLimitPercentage(50);
