@@ -10,7 +10,7 @@
         "url": "https://github.com/EpicKris/node-img-to-zpl/issues"
     },
     "engines": {
-        "node": ">=12.13.0"
+        "node": ">=14"
     },
     "main": "dist/index.js",
     "scripts": {
