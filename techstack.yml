@@ -1,0 +1,204 @@
+repo_name: SmolSoftBoi/node-zpl-converter
+report_id: b45ad37dce2a8b1bf4972d117f8fb9e6
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-29T19:29:19+00:00'
+requested_by: SmolSoftBoi
+provider: github
+branch: master
+detected_tools_count: 15
+tools:
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/SmolSoftBoi/node-zpl-converter/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Kristian Matthews-Kennington
+  last_updated_on: 2023-11-21 22:21:13.000000000 Z
+- name: TypeScript
+  description: A superset of JavaScript that compiles to clean JavaScript output
+  website_url: http://www.typescriptlang.org
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: https://github.com/SmolSoftBoi/node-zpl-converter
+  detection_source: Repo Metadata
+- name: Node.js
+  description: A platform built on Chrome's JavaScript runtime for easily building
+    fast, scalable network applications
+  website_url: http://nodejs.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source_url: https://github.com/SmolSoftBoi/node-zpl-converter/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Kristian Matthews
+  last_updated_on: 2020-07-16 14:46:58.000000000 Z
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source_url: https://github.com/SmolSoftBoi/node-zpl-converter/blob/master/.eslintrc
+  detection_source: ".eslintrc"
+  last_updated_by: Kristian Matthews
+  last_updated_on: 2020-07-16 14:46:58.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/SmolSoftBoi/node-zpl-converter
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/SmolSoftBoi/node-zpl-converter/blob/master/.github/workflows/build.yml
+  detection_source: ".github/workflows/build.yml"
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2023-10-23 18:02:37.000000000 Z
+- name: Yarn
+  description: A new package manager for JavaScript
+  website_url: https://yarnpkg.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
+  detection_source_url: https://github.com/SmolSoftBoi/node-zpl-converter/blob/master/yarn.lock
+  detection_source: yarn.lock
+  last_updated_by: Kristian Matthews
+  last_updated_on: 2020-07-16 15:08:49.000000000 Z
+- name: nodemon
+  description: A simple monitor script for use during development of a node.js app
+  website_url: http://nodemon.io/
+  version: 3.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Monitoring
+  sub_category: node.js Application Monitoring
+  image_url: https://img.stackshare.io/service/5577/preview.png
+  detection_source_url: https://github.com/SmolSoftBoi/node-zpl-converter/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Kristian Matthews-Kennington
+  last_updated_on: 2023-11-29 19:22:16.000000000 Z
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source_url: https://github.com/SmolSoftBoi/node-zpl-converter/blob/master/package.json
+  detection_source: package.json
+  last_updated_by: Kristian Matthews
+  last_updated_on: 2020-07-16 14:46:58.000000000 Z
+- name: "@types/node"
+  description: TypeScript definitions for Node.js
+  package_url: https://www.npmjs.com/@types/node
+  version: 16.9.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15809/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
+  detection_source_url: https://github.com/SmolSoftBoi/node-zpl-converter/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Kristian Matthews-Kennington
+  last_updated_on: 2023-11-29 19:22:16.000000000 Z
+- name: "@typescript-eslint/eslint-plugin"
+  description: TypeScript plugin for ESLint
+  package_url: https://www.npmjs.com/@typescript-eslint/eslint-plugin
+  version: 6.19.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15982/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: https://github.com/SmolSoftBoi/node-zpl-converter/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Kristian Matthews-Kennington
+  last_updated_on: 2023-12-18 18:19:41.000000000 Z
+- name: "@typescript-eslint/parser"
+  description: An ESLint custom parser which leverages TypeScript ESTree
+  package_url: https://www.npmjs.com/@typescript-eslint/parser
+  version: 6.19.0
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15980/default_732016a20524708efe7a4c77497fe9bfeea19ba6.png
+  detection_source_url: https://github.com/SmolSoftBoi/node-zpl-converter/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Kristian Matthews-Kennington
+  last_updated_on: 2023-12-18 18:19:41.000000000 Z
+- name: jimp
+  description: An image processing library written entirely in JavaScript
+  package_url: https://www.npmjs.com/jimp
+  version: 0.22.10
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16902/default_3260e41a86e21f9dd1deddcf0a6e09720ec49021.png
+  detection_source_url: https://github.com/SmolSoftBoi/node-zpl-converter/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Kristian Matthews-Kennington
+  last_updated_on: 2023-11-14 12:25:10.000000000 Z
+- name: rimraf
+  description: A deep deletion module for node
+  package_url: https://www.npmjs.com/rimraf
+  version: 3.0.2
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15807/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: https://github.com/SmolSoftBoi/node-zpl-converter/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2023-05-16 17:30:06.000000000 Z
+- name: ts-node
+  description: TypeScript execution environment and REPL for node.js
+  package_url: https://www.npmjs.com/ts-node
+  version: 10.9.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15830/default_6743ba96cf149a3c3c68a185199f9705d6eff80e.png
+  detection_source_url: https://github.com/SmolSoftBoi/node-zpl-converter/blob/master/yarn.lock
+  detection_source: package.json
+  last_updated_by: Kristian Matthews-Kennington
+  last_updated_on: 2023-11-29 19:22:16.000000000 Z
