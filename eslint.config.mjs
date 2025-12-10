@@ -1,4 +1,3 @@
-import { defineConfig, globalIgnores } from "eslint/config";
 import tsParser from "@typescript-eslint/parser";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -13,16 +12,27 @@ const compat = new FlatCompat({
     allConfig: js.configs.all
 });
 
-export default defineConfig([globalIgnores(["**/dist"]), {
-    extends: compat.extends(
-        "eslint:recommended",
-        "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended",
-    ),
+const compatConfigs = compat.extends(
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+);
 
-    languageOptions: {
-        parser: tsParser,
-        ecmaVersion: 2020,
-        sourceType: "module",
+const sharedLanguageOptions = {
+    parser: tsParser,
+    ecmaVersion: 2020,
+    sourceType: "module",
+};
+
+export default [
+    {
+        ignores: ["**/dist"],
     },
-}]);
+    ...compatConfigs.map((config) => ({
+        ...config,
+        languageOptions: {
+            ...config.languageOptions,
+            ...sharedLanguageOptions,
+        },
+    })),
+];
