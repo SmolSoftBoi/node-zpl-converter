@@ -1,6 +1,6 @@
 import { readFileSync } from 'fs';
 
-import Jimp from 'jimp';
+import { Jimp } from 'jimp';
 
 /**
  * ZPL converter.
@@ -132,8 +132,8 @@ export default class ZplConverter {
         let buffer = new Buffer('');
 
         const graphics = await Jimp.read(originalImage);
-        const width = graphics.getWidth();
-        const height = graphics.getHeight();
+        const width = graphics.width;
+        const height = graphics.height;
 
         let index = 0;
         let auxBinaryChars = ['0', '0', '0', '0', '0', '0', '0', '0'];
